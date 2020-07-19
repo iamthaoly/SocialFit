@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MenuActivity extends AppCompatActivity {
-    ImageButton btnChallenges, btnTraining;
+    ImageButton btnChallenges, btnTraining, btnTracker, btnLog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +34,26 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnTracker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, TrackerActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnLog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, LogActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void addControls() {
         btnChallenges = findViewById(R.id.btnChallenges);
         btnTraining = findViewById(R.id.btnTraining);
+        btnTracker = findViewById(R.id.btnTracker);
+        btnLog = findViewById(R.id.btnLog);
     }
 }

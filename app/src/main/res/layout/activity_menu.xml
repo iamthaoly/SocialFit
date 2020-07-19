@@ -58,7 +58,7 @@
             app:layout_row="1">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/btnTracker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button2"
@@ -112,7 +112,7 @@
             app:layout_row="3">
 
             <ImageButton
-                android:id="@+id/btnReport"
+                android:id="@+id/btnLog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button2"
@@ -123,7 +123,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Report"
+                android:text="Logs"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
