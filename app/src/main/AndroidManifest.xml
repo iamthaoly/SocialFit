@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon99"
+        android:icon="@drawable/fit"
         android:label="FitApp"
-        android:roundIcon="@drawable/icon99"
+        android:roundIcon="@drawable/fit"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".LogActivity"></activity>
